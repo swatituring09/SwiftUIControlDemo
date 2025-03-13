@@ -1,36 +1,45 @@
-//
-//  SwiftUIControlDemoTests.swift
-//  SwiftUIControlDemoTests
-//
-//  Created by Ruchi Kumar on 13/03/25.
-//
-
 import XCTest
-@testable import SwiftUIControlDemo
+@testable import SwiftUIControlDemo  // Replace with your actual app name
 
-final class SwiftUIControlDemoTests: XCTestCase {
+final class OpacitySliderViewTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testInitialOpacityValue() {
+        let viewModel = OpacityViewModel()
+        XCTAssertEqual(viewModel.opacity, 1.0, "Initial opacity should be 1.0")
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testSliderValueChange() {
+        let viewModel = OpacityViewModel()
+        
+        viewModel.opacity = 0.5
+        XCTAssertEqual(viewModel.opacity, 0.5, "Opacity should update to 0.5 when slider is moved")
+
+        viewModel.opacity = 0.2
+        XCTAssertEqual(viewModel.opacity, 0.2, "Opacity should update to 0.2")
     }
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    func testMinimumOpacityValue() {
+        let viewModel = OpacityViewModel()
+        
+        viewModel.opacity = 0.0
+        XCTAssertEqual(viewModel.opacity, 0.0, "Opacity should be 0.0 at minimum slider value")
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    func testMaximumOpacityValue() {
+        let viewModel = OpacityViewModel()
+        
+        viewModel.opacity = 1.0
+        XCTAssertEqual(viewModel.opacity, 1.0, "Opacity should be 1.0 at maximum slider value")
+    }
+
+    func testIntermediateOpacityValues() {
+        let viewModel = OpacityViewModel()
+        
+        let testValues: [Double] = [0.25, 0.5, 0.75]
+        for value in testValues {
+            viewModel.opacity = value
+            XCTAssertEqual(viewModel.opacity, value, "Opacity should update to \(value)")
         }
     }
-
 }
+

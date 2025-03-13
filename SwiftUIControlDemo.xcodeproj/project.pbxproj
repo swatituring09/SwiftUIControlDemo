@@ -16,6 +16,7 @@
 		CB23B3CE2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3CD2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift */; };
 		CB23B3DB2D830CDE003942AB /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3DA2D830CDE003942AB /* DarkModeView.swift */; };
 		CB23B3DD2D831AA6003942AB /* OpacitySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */; };
+		CB23B3E12D833F0A003942AB /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3E02D833F0A003942AB /* PickerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		CB23B3CD2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CB23B3DA2D830CDE003942AB /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
 		CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitySliderView.swift; sourceTree = "<group>"; };
+		CB23B3E02D833F0A003942AB /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				CB23B3B62D82FC6C003942AB /* Preview Content */,
 				CB23B3DA2D830CDE003942AB /* DarkModeView.swift */,
 				CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */,
+				CB23B3E02D833F0A003942AB /* PickerView.swift */,
 			);
 			path = SwiftUIControlDemo;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				CB23B3B32D82FC65003942AB /* ContentView.swift in Sources */,
 				CB23B3DD2D831AA6003942AB /* OpacitySliderView.swift in Sources */,
 				CB23B3B12D82FC65003942AB /* SwiftUIControlDemoApp.swift in Sources */,
+				CB23B3E12D833F0A003942AB /* PickerView.swift in Sources */,
 				CB23B3DB2D830CDE003942AB /* DarkModeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
