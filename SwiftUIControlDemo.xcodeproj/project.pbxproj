@@ -14,6 +14,8 @@
 		CB23B3C22D82FC6C003942AB /* SwiftUIControlDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3C12D82FC6C003942AB /* SwiftUIControlDemoTests.swift */; };
 		CB23B3CC2D82FC6C003942AB /* SwiftUIControlDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3CB2D82FC6C003942AB /* SwiftUIControlDemoUITests.swift */; };
 		CB23B3CE2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3CD2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift */; };
+		CB23B3DB2D830CDE003942AB /* DarkModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3DA2D830CDE003942AB /* DarkModeView.swift */; };
+		CB23B3DD2D831AA6003942AB /* OpacitySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		CB23B3C72D82FC6C003942AB /* SwiftUIControlDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIControlDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB23B3CB2D82FC6C003942AB /* SwiftUIControlDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlDemoUITests.swift; sourceTree = "<group>"; };
 		CB23B3CD2D82FC6C003942AB /* SwiftUIControlDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIControlDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CB23B3DA2D830CDE003942AB /* DarkModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DarkModeView.swift; sourceTree = "<group>"; };
+		CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacitySliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,8 @@
 				CB23B3B22D82FC65003942AB /* ContentView.swift */,
 				CB23B3B42D82FC6C003942AB /* Assets.xcassets */,
 				CB23B3B62D82FC6C003942AB /* Preview Content */,
+				CB23B3DA2D830CDE003942AB /* DarkModeView.swift */,
+				CB23B3DC2D831AA6003942AB /* OpacitySliderView.swift */,
 			);
 			path = SwiftUIControlDemo;
 			sourceTree = "<group>";
@@ -258,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB23B3B32D82FC65003942AB /* ContentView.swift in Sources */,
+				CB23B3DD2D831AA6003942AB /* OpacitySliderView.swift in Sources */,
 				CB23B3B12D82FC65003942AB /* SwiftUIControlDemoApp.swift in Sources */,
+				CB23B3DB2D830CDE003942AB /* DarkModeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
